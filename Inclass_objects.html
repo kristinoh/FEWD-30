@@ -1,0 +1,19 @@
+<script>
+var myPerson = {
+  firstName: null,
+  lastName:  null
+};
+
+myPerson.getFullName = function() {
+  return this.firstName + " " + this.lastName;
+}
+
+myPerson.sayMyName = function () {
+  return altert(this.getFullName));
+}
+
+myPerson.firstName = prompt ("What is your first name?");
+myPerson.lastName = prompt ("What is yoru last name?");
+
+myPerson.sayMyName();
+</script>
