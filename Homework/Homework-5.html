@@ -3,14 +3,29 @@
     <title></title>
     <style media="screen">
 
-body { font-size: 20px; font-family: sans-serif; }
+      body {
+        font-size: 20px;
+        font-family: sans-serif;
+      }
 
-td { width: 100px; text-align: center; }
-.placeholder, button { width: 100%; }
-.placeholder { height: 23px; border: 1px solid #bababa; border-radius: 3px; }
-button { cursor: pointer; border: 1px solid #58c0f5; color: #58c0f5; background-color: white; font: inherit; }
-button { background-color: #58c0f5; color: white; border-radius: 3px; }
-
+      td {
+        width: 100px;
+        text-align: center;
+      }
+        .placeholder, button { width: 100%; }
+        .placeholder { height: 23px; border: 1px solid #bababa; border-radius: 3px; }
+      button {
+        cursor: pointer;
+        border: 1px solid #58c0f5;
+        color: #58c0f5;
+        background-color: white;
+        font: inherit;
+      }
+      button {
+        background-color: #58c0f5;
+        color: white;
+        border-radius: 3px;
+      }
     </style>
   </head>
   <body>
@@ -44,7 +59,66 @@ button { background-color: #58c0f5; color: white; border-radius: 3px; }
       </tr>
     </table>
     <script>
-      
+    // add function
+      var add = document.querySelector("#add-button");
+      function addClicked(clickEvent) {
+      var firstOperand = document.getElementById("first-operand");
+      var secondOperand = document.getElementById("second-operand");
+      var result = document.getElementById("result");
+      var a = firstOperand.textContent;
+      var b = secondOperand.textContent;
+      var a = parseInt(a);
+      var b = parseInt(b);
+      var sum = a + b;
+      result.textContent = sum;
+      }
+      add.addEventListener("click", addClicked);
+
+    // subtract function
+    var sub = document.querySelector("#subtract-button");
+    function subClicked(clickEvent) {
+      var firstOperand = document.getElementById("first-operand");
+      var secondOperand = document.getElementById("second-operand");
+      var result = document.getElementById("result");
+      var a = firstOperand.textContent;
+      var b = secondOperand.textContent;
+      var a = parseInt(a);
+      var b = parseInt(b);
+      var diff = a - b;
+      result.textContent = diff;
+      }
+      sub.addEventListener("click", subClicked
+      );
+
+    // multiplication function
+    var mult = document.querySelector("#multiply-button");
+    function multClicked(clickEvent) {
+      var firstOperand = document.getElementById("first-operand");
+      var secondOperand = document.getElementById("second-operand");
+      var result = document.getElementById("result");
+      var a = firstOperand.textContent;
+      var b = secondOperand.textContent;
+      var a = parseInt(a);
+      var b = parseInt(b);
+      var prod = a * b;
+      result.textContent = prod;
+      }
+      mult.addEventListener("click", multClicked);
+
+    // division function
+    var divi = document.querySelector("#divide-button");
+    function diviClicked(clickEvent) {
+      var firstOperand = document.getElementById("first-operand");
+      var secondOperand = document.getElementById("second-operand");
+      var result = document.getElementById("result");
+      var a = firstOperand.textContent;
+      var b = secondOperand.textContent;
+      var a = parseInt(a);
+      var b = parseInt(b);
+      var quot = a / b;
+      result.textContent = quot;
+      }
+      divi.addEventListener("click", diviClicked);
     </script>
   </body>
 </html>
