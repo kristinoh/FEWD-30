@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <header>
+      <form id="new-todo-item-form">
+        <input type="text"
+        id="new-todo-item-input"
+        placeholder="What do you need to do?">
+        <button type="submit">Add</button>
+      </form>
+    </header>
+
+    <main>
+        <ul id="todo-list"></ul>
+    </main>
+
+    <script>
+      var form = document.querySelector("form");
+      var input = form.querySelector("input");
+      var list = document.querySelector("#todo-list");
+
+      function createToDoItem(text) {
+        var item1 = document.createElement("li");
+        item1.textContent = text;
+        item1.setAttribute("class", "todo-item");
+        return item1;
+      }
+
+      function formSubmitted(event) {
+        event.preventDefault(); //remember this.  It will always be "preventdefault"
+        list.appendChild(createToDoItem(input.value));
+        form.reset(); //this makes the list clear itself after the "click" happens.
+          }
+
+      form.addEventListener("submit", formSubmitted);
+      input.focus();  // this makes the cursor go back to the form - ready for typing!
+    // When the form is submitted:                             .addEventListener()
+    //    Grab the input from the text input                    .value
+    //    Add an element (li) to the list (ul)
+    //        -create the li
+    //        -set the content                                  .textContent
+    //        -add it to the list                               .appendChild()
+    // Stop default form submission (this should reload the page again.)    .preventDefault()
+    // Reset the form back to initial state (if this doesn't happen, then the listed item is in the list, but also still in the text box.  It must be reset so it becomes blank again.)
+
+    // When the page loads:
+    // Add an event listener to the form submit
+    </script>
+  </body>
+</html>

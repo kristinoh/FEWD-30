@@ -1,0 +1,55 @@
+1.  Add an element to the page.
+    a.  Does the element have content?
+    b.  Are there any attributes that need to be set?
+    c.  Where does it go?
+2.  Adding behavior to element.
+    a.  Which/What element?
+    b.  Which/What function?
+3.  Changing something about an existing element.
+    a.  Which element?
+    b.  What are you changing?
+4. Get data from a server
+    - ajax (?? -- we haven't used that yet)
+5.  Given a set of things, do soething to each of them.
+    - loops (?? -- we haven't used these yet either.)
+
+
+<script>
+// Adding an element to the page
+// 1.  Create the element
+var child - document.createElement("li");
+// 2.  Append the elemnet to some element that is already there
+var parent - document.querySelector("ul");
+parent.appendChild(child);
+// 3.  Setting the content
+child.textContent = "Do my homework, like Avand told me to";
+// 4.  Setting some attribute
+child.setAttribute("class", "todo-item");
+
+// Yields:
+// <ul>
+//   <li class="todo-item">Do my homework...</li>
+// </ul>
+
+// Adding behvaior to an element
+// 1.  Which element do you want to attache behavior to?
+var button - document.querySelector("#click-me");
+// 2.  What happens when the event occurs?
+function sayCursorLocation(clickEvent) {
+// ***THIS IS JUST AN EXAMPLE.  DO WHATEVER YOU WANT**
+    var x = clickEvent.clientX;
+    var y = clickEvent.clientY;
+    alert("your mouse is at: " + x + ", " + y);
+
+}
+// 3.  Attaching the event handler to the element.
+button.addEventListener("click", sayCursorLocation);
+
+// Manipulating an existing element
+// 1.  Get the lement you want to change
+var image = document.querySelector("img#logo");
+var paragraph - document.querySelector("p");
+// 2.  Change an attribute
+image.setAttribute("src" "http://example.com/images/small-logo.png");
+paragraph.textContent = ""
+</script>
