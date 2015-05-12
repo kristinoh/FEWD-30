@@ -49,10 +49,39 @@ movieLink.textContent = favoriteMovies.name;  //favoriteMovies.name is the names
 
 //create span
 var movieInfo = document.createElement("span");
-movieInfo.textContent = " (favoriteMovies.year"," + ratingAvgRound " stars" + ratingNumber " ratings)";
+movieInfo.textContent = "(" + favoriteMovies.year + "," + ratingAvgRound + " stars," + ratingNumber " ratings");
+
 
 var movie = document.createElement("li");
 movie.appendChild(link);
 movie.appendChild(span);
-list.appendChild(movieItem);
+list.appendChild();
 }
+
+
+
+// var list = document.querySelector("ul");
+//
+// for (var i=0; i < favoriteMovies.lenth; i++) {
+//   var movie = favoriteMovies[i];
+//
+//   var link = document.createElement("a");
+//   link.setAttribute("href", movie.url);
+//   link.textContent = movie.name;
+//
+//   var totalRating = 0;
+//
+
+// }
+//
+// var avgRating = Math.round((totalRating / movie.ratings.length) * 10) / 10
+//
+// var span = document.createElement("span");
+// span.textContent = "(" + movie.year + "," + avgRating + " stars, " + movie.ratings.length + "ratings");
+//
+// var movieItem = document.creatElement("li");
+// movieItem.appendChild(link);
+// movieItem.appendChild(span);
+// list.appendChild(movieItem);
+// }
+</script>
