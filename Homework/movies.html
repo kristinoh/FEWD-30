@@ -1,0 +1,54 @@
+<ul>
+
+</ul>
+
+<script>
+var list = document.querySelector("ul");
+
+function get(url, success) {
+
+
+}
+
+
+// function success(results) {
+//   var movies = results["Search"];
+//
+//   for (var i = 0; i < movies.length; i++) {
+//     var movie = movies [i];
+//     var li = document.createElement("li");
+//     li.textContent = movie["Title"];
+//     list.appendChild(li);
+//   }
+// }
+
+// ame thing as this when using JSON
+{
+  "Search": [
+    {"Title": "Matrix", "..."
+     "etc"
+     "etc"
+     "...etc"
+    }
+  ]
+}
+
+get("http://omdbapi.com/?s=matrix", success);
+//elm.addEventListener("click", handleClick) **same thing as above!**
+
+//This is json - jquery already has this inputted, so we don't really need to memeorize it.
+______________________________________________________________
+function get(url, success) {
+  var xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("readystatechange", function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      success(JSON.parse(xhr.response));
+    }
+  });
+
+  xhr.open("GET", url);
+  xhr.send();
+}
+______________________________________________________________
+</script>

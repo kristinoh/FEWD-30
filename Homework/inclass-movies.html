@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Movie Search</title>
+  </head>
+  <body>
+    <h1>Movie Search vs</h1>
+    <form id="movie-list">
+      <input type="text" id = "movie" placeholder = "Movie title...">
+      <button type="submit" name="Search">Search</button>
+    </form>
+    <ul>
+    </ul>
+
+    <script>
+    var list = document.querySelector("ul");
+    var button = document.querySelector("button");
+    var form = document.querySelector("#movie");
+    var input = form.value;
+
+    function get(url, success) {
+      var xhr = new XMLHttpRequest();
+
+      xhr.addEventListener("readystatechange", function() {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          success(JSON.parse(xhr.response));
+        }
+      });
+
+      xhr.open("GET", url);
+      xhr.send();
+    }
+
+    function success(results) {
+      var movies = results["Search"];
+    }
+
+      for (var i = 0; i < movies.length; i++) {
+        var movie = movies[i];Oh man
+        var li = document.createElement("li");
+        var a = document.createElement("a");
+        a.setAttribute("href", "http:// .....****")
+        li.textContent = movie["Title"];
+        list.appendChild(li);
+        }
+
+  function formSubmitted(event) {
+    get("http://omdbapi.com/?s=" + input.value, success);
+}
+    </script>
+  </body>
+</html>
