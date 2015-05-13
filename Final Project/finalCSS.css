@@ -1,7 +1,59 @@
 html {
-  background-color: #EEEDEC;
+  background-color: white;
+}
+
+header {
+  background-color: #;
+  color: white;
+}
+
+#nav {
+  text-align: right;
+  margin: auto;
+  position: fixed;
+  margin-top: -20px;
+}
+#nav li {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+#nav a {
+  font-family: arial;
+  text-align: center;
+  color:  yellow;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(file:///Users/KristinOh/GitHub/FEWD-30/Final%20Project/yellowombre.jpeg);
+  background-position: center;
+}
+
+main {
+  background-color: #e7a45d;
+  padding:20px;
+  max-width: max;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 400%;
+  text-align: right;
+}
+
+#yellowtree img {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
 }
 
 p {
-  color: red
+  color: white;
+}
+
+footer {
+  backgroud-color: #e7a45d;
+  color: gray;
+  text-align: center;
 }
