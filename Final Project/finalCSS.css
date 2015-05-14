@@ -3,15 +3,15 @@ html {
 }
 
 header {
-  background-color: #;
+  background-color: white;
   color: white;
 }
 
 #nav {
   text-align: right;
-  margin: auto;
+  margin-top: 0px;
   position: fixed;
-  margin-top: -20px;
+  background-color: white;
 }
 #nav li {
   display: inline-block;
