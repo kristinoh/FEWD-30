@@ -1,0 +1,63 @@
+#nav {
+  text-align: right;
+  margin-top: -20px;
+  position: fixed;
+}
+#nav li {
+  text-align: right;
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+#nav a {
+  font: Helvetica;
+  text-align: center;
+  color:  yellow;
+  text-decoration: none;
+}
+
+body {
+  background-image: url(file:///Users/KristinOh/GitHub/FEWD-30/FinalProject/grass_tree_sky_light_summer-landscape.jpg);
+  background-size: cover;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+      background: none repeat scroll 0 0 #FFFFFF;
+      border-radius: 18px 18px 18px 18px;
+      clear: both;
+      margin-top: 40px;
+      opacity: 0.5;
+      overflow: hidden;
+      padding: 40px 20px 0;
+      width: 900px;
+}
+
+
+h1{
+  font: 100px Helvetica;
+}
+/*h1 {
+  font-size: 400%;
+  font: Helvetica;
+  text-align: center;
+}*/
+
+/*use this image in 'contacts' section
+#yellowtree img {
+  border-radius: 100%;
+  width: 300px;
+  height: 300px;
+}*/
+
+p {
+  color: white;
+}
+
+footer {
+  backgroud-color: #e7a45d;
+  color: gray;
+  text-align: center;
+}
