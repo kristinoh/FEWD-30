@@ -12,24 +12,39 @@
 #nav a {
   font: Helvetica;
   text-align: center;
-  color:  yellow;
+  color:  #999999;
   text-decoration: none;
 }
 
 body {
-  background-image: url(file:///Users/KristinOh/GitHub/FEWD-30/FinalProject/grass_tree_sky_light_summer-landscape.jpg);
-  background-size: cover;
-  position: fixed;
+  background-image: url(grass_tree_sky_light_summer-landscape.jpg);
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  background-position: center;
+  position: absolute;
+  height: 100px;
   width: 100%;
-  height: 100%;
+
 }
 
 main {
+  background-color: white;
+  padding:20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px slategrey;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gold;
+  opacity: 0.4;
+
+  max-width: 660px;
+  margin: 0 auto;
+
       background: none repeat scroll 0 0 #FFFFFF;
       border-radius: 18px 18px 18px 18px;
       clear: both;
       margin-top: 40px;
-      opacity: 0.5;
+
       overflow: hidden;
       padding: 40px 20px 0;
       width: 900px;
@@ -37,7 +52,7 @@ main {
 
 
 h1{
-  font: 100px Helvetica;
+  font: 50px 'Grand Hotel';
 }
 /*h1 {
   font-size: 400%;
@@ -53,7 +68,7 @@ h1{
 }*/
 
 p {
-  color: white;
+  color: black;
 }
 
 footer {

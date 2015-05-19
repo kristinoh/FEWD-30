@@ -25,15 +25,25 @@
       var input = form.querySelector("input");
       var list = document.querySelector("#todo-list");
 
+      function saveToDo(text) {
+        var currentTodos = JSON.parse(localStorage.getItem("todos"));
+        if (currentTodos == null) {
+          currentTodos = [];
+        }
+
+        currentTodos.push(text);
+        localStorage.setItem("todos", JSON.stringify(currentTodos));
+      };
+
       function createToDoItem(text) {
         var item1 = document.createElement("li");
-        item1.textContent = text;
-        item1.setAttribute("class", "todo-item");
-        return item1;
+        saveTodo(newTodoItemInput.value);
+        newListItme.textContent = newTodoItemInput.value;
+        todoList.appendChild(newListItem);
+        newTodoItemForm.reset();
+        formSubmitEvent.preventDefault();
       }
 // this is literally the same thing as "<li class="toDo-Item">text</li>"
-
-
 
 
       function formSubmitted(event) {
@@ -55,6 +65,15 @@
 
     // When the page loads:
     // Add an event listener to the form submit
+
+      var existingTodos = JSON.parse(localStorage.getItem("todos"));
+
+      for (var i = 0; i < existingTodos.length; i++) {
+        var item1 = document.createElement("li");
+        newListItme.textContent = newTodoItemInput.value;
+        todoList.appendChild(newListItem);
+      }
+      
     </script>
   </body>
 </html>
