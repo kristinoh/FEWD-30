@@ -43,7 +43,14 @@ main {
 
   max-width: 800px;
   margin: 0px 200px;
+}
 
+#textcontent {
+  background: none repeat scroll 0 0 #FFFFFF;
+  color: #26265F;
+  font-size: 14px;
+  line-height: 24px;
+  opacity: 1;
 }
 
 p #ontop {
