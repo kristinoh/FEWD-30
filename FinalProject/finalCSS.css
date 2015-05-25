@@ -10,6 +10,34 @@ body {
   background-position: center;
   position: absolute;
 }
+/*
+header {
+  background-color: #c4c4c4;
+  padding: 10px 20px;
+  border-bottom: 1px solid #848484;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 700px;
+  position: relative;
+}
+header nav {
+  text-shadow: 0 1px 0 #555;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+header nav ol {
+  margin: 0;
+  line-height: 55px;
+}
+header nav li {
+  display: inline;
+  margin-left: 25px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+}*/
+
 header {
   margin-top: 0px;
   text-align: right;
@@ -39,7 +67,7 @@ main {
   border-style: solid;
   border-width: 1px;
   border-color: gold;
-  opacity: 0.5;
+  opacity: .4;
 
   max-width: 800px;
   margin: 0px 200px;
