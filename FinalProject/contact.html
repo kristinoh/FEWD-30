@@ -90,10 +90,21 @@
 <script>
 // get the text content from the form divs and have it spit out as the comments under the main.
 // the comments section should show up as "First Name Last Name: *enter* "good brunch. let's do it again!" or something like that with a date.
-function (fullname) {
-var firstName = "First Name"
-var lastName = "Last Name"
-var result = firstName + lastName;
-return result;
-};
+
+var submit= document.querySelector("submit");
+
+function addClicked(clickEvent) {
+  var fName = document.getElementById("fName");
+  var lName = document.getElementById("lName");
+  var comment = document.getElementById("comments")
+  var result = document.getElementById("submit");
+
+  var a = fName.textContent;
+  var b = lName.textContent;
+  var a = parseInt(a);
+  var b = parseInt(b);
+  var completeName = a + b;
+  result.textContent = complete;
+}
+add.addEventLIstener("click", addClicked);
 </script>
