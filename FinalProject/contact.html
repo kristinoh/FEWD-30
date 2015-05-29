@@ -6,6 +6,9 @@
   <head>
     <title>Yellow Tree Project</title>
     <style>
+/** {
+  border: solid;
+}*/
 
   body  {
     background: url(yellowtree.png) no-repeat center center fixed;
@@ -55,64 +58,64 @@
         <p>
         Stay connected!
         </p>
-        <form class="" action="index.html" method="post">
-
+    <form id="guestInfo">
     <div class="form-group">
       <label>First Name</label>
-      <input type="text" name="fname" value="" placeholder="First Name" contenteditable>
+      <input type="text" id="fname" value="" placeholder="First Name" contenteditable>
     </div>
     <div class="form-group">
       <label>Last Name</label>
-      <input type="text" name="lname" value="" placeholder="Last Name" contenteditable>
+      <input type="text" id="lname" value="" placeholder="Last Name" contenteditable>
     </div>
     <div class="form-group">
       <label>Email</label>
-      <input type="Email" name="Email" value="" placeholder="Email Address" contenteditable>
+      <input type="Email" id="email" value="" placeholder="Email Address" contenteditable>
     </div>
     <div class="form-group">
       <label>Comments</label>
-      <input type="Comments" name="Comments" value="" placeholder="Write something...!" contenteditable>
+      <input type="Comments" id="comments" value="" placeholder="Write something...!" contenteditable>
     </div>
     <div class="form-group">
-      <input type="submit" name="submit" value="Submit">
+      <input type="submit" id="submit" value="Submit">
     </div>
   </form>
-      </main>
 
-  <div id="container">
     <p>
       <strong>Comments:</strong>
+      <span id="filledOutComments">
+        <ul id="listedComments">
+
+        </ul>
+      </span>
     </p>
   </div>
-
+</main>
   </body>
 
   <footer>Copyright 2015</footer>
 </html>
 
-<script>
+<script type="text/javascript">
+
 // get the text content from the form divs and have it spit out as the comments under the main.
-// the comments section should show up as "First Name Last Name: *enter* "good brunch. let's do it again!" or something like that with a date.
+// the comments section should show up as "First Name Last Name: *enter* "good brunch. let's do it again!" or something like that.
 
-var submit= document.querySelector("submit");
+var guestInfo = document.getElementById("guestInfo"); //form div
+var fName = document.getElementById("fName");
+var lName = document.getElementById("lName");
+var comments = document.getElementById("comments") //coments on form
+var filledOutComments = document.getElementById("filledOutComments"); //comments in comment box
+var submit = document.getElementById("submit");
+var result = fName + lName + comments;
 
-function addClicked(clickEvent) {
-  var fName = document.getElementById("#fName");
-  var lName = document.getElementById("#lName");
-  var comment = document.getElementById("#container")
-  var result = document.getElementById("#submit");
-
-  var a = fName.textContent;
-  var b = lName.textContent;
-  var c = Comments.textcontent;
-  var a = parseInt(a);
-  var b = parseInt(b);
-  var c = parseInt(c);
-  var completeName = a + b + c;
-  container.textContent = complete;
-  return result;
+function createGuestComments(event) {
+  //info and comments made by guest and put it in the span named commentText.
+//how ot append child to comment box??
+  var result = document.createElement(filledOutComments);
+  document.span.appendChild(result);
+  guestInfo.reset();
+  event.preventDefault();
 }
-add.addEventLIstener("click", addClicked);
-document.appendChild(container);
 
+submit.addEventListener("submit", createGuestComments);
 </script>
