@@ -100,22 +100,27 @@
 // get the text content from the form divs and have it spit out as the comments under the main.
 // the comments section should show up as "First Name Last Name: *enter* "good brunch. let's do it again!" or something like that.
 
+var form = document.querySelector("form");
 var guestInfo = document.getElementById("guestInfo"); //form div
-var fName = document.getElementById("fName");
-var lName = document.getElementById("lName");
-var comments = document.getElementById("comments") //coments on form
-var filledOutComments = document.getElementById("filledOutComments"); //comments in comment box
+var filledOutComments = document.getElementById("listedComments"); //comments in comment box
 var submit = document.getElementById("submit");
-var result = fName + lName + comments;
+
 
 function createGuestComments(event) {
+  var fName = document.getElementById("fname").value;
+  var lName = document.getElementById("lname").value;
+  var comments = document.getElementById("comments").value; //coments on form
   //info and comments made by guest and put it in the span named commentText.
 //how ot append child to comment box??
-  var result = document.createElement(filledOutComments);
-  document.span.appendChild(result);
-  guestInfo.reset();
   event.preventDefault();
+  // formSubmitEvent.preventDefault();
+  var resultSpan = document.createElement("li");
+  var result = document.createTextNode(fName + " " + lName + " " + "- " + comments);
+  filledOutComments.appendChild(resultSpan);
+  resultSpan.appendChild(result);
+  guestInfo.reset();
 }
 
-submit.addEventListener("submit", createGuestComments);
+form.addEventListener("submit", createGuestComments);
+// input.focus();
 </script>
