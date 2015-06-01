@@ -54,30 +54,32 @@ header {
 }
 
 #nav a {
-  font: Helvetica;
+  font: Georgia;
   text-align: center;
-  color:  #999999;
+  color:  #818181;
   text-decoration: none;
 }
 
 main {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
 
   padding: 10px 10px 10px 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 30px slategrey;
+  box-shadow: 0px 0px 30px grey;
   border-style: solid;
   border-width: 1px;
   border-color: gold;
   opacity: 1;
 
-  max-width: 800px;
-  margin: 0px 200px;
+  max-width: absolute;
+  min-width: 600px;
+  margin: 0px 20px 0px 200px;
 }
 
 h1{
   margin: 0px auto;
-  font: 70px 'Grand Hotel';
+  font: 70px georgia;
+  color: #818181;
 }
 /*h1 {
   font-size: 400%;
@@ -93,11 +95,20 @@ h1{
 }*/
 
 p {
-  color: black;
+  color: #818181;
+  font-family: georgia, arial;
 }
 
 footer {
   backgroud-color: #e7a45d;
   color: gray;
   text-align: center;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 25px;
+  width: 100%;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
 }

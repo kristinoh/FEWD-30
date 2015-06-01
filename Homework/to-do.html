@@ -66,13 +66,36 @@
     // When the page loads:
     // Add an event listener to the form submit
 
-      var existingTodos = JSON.parse(localStorage.getItem("todos"));
-
-      for (var i = 0; i < existingTodos.length; i++) {
+      // var existingTodos = JSON.parse(localStorage.getItem("todos"));
+      //
+      // for (var i = 0; i < existingTodos.length; i++) {
         var item1 = document.createElement("li");
         newListItme.textContent = newTodoItemInput.value;
         todoList.appendChild(newListItem);
       }
+
+      //
+      // var form = document.querySelector("form");
+      // var guestInfo = document.getElementById("guestInfo"); //form div
+      // var filledOutComments = document.getElementById("listedComments"); //comments in comment box
+      // var submit = document.getElementById("submit");
+      //
+      //
+      // function createGuestComments(event) {
+      //   var fName = document.getElementById("fname").value;
+      //   var lName = document.getElementById("lname").value;
+      //   var comments = document.getElementById("comments").value; //coments on form
+      //   //info and comments made by guest and put it in the span named commentText.
+      // //how ot append child to comment box??
+      //   event.preventDefault();
+      //   var resultSpan = document.createElement("li");
+      //   var result = document.createTextNode(comments + " - " + fName + " " + lName);
+      //   filledOutComments.appendChild(resultSpan);
+      //   resultSpan.appendChild(result);
+      //   guestInfo.reset();
+      // }
+      //
+      // form.addEventListener("submit", createGuestComments);
 
     </script>
   </body>
