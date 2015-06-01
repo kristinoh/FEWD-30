@@ -10,36 +10,28 @@
   border: solid;
 }*/
 
-  #container {
-    padding: 10px 10px 10px 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 30px slategrey;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gold;
-    background-color: rgba(255, 255, 255, .4);
-  }
-
-.form-group{
+/*.form-group{
     width: 300px;
-  }
+  }*/
 
     </style>
-  </head>
-  <link rel="stylesheet" href=finalCSS.css media="all">
-  <link rel="stylesheet" href=finalmobile.css media="(max-width: 660px)">
-  <link rel="stylesheet" href=finalmobile.css media="print">
 
+    <link rel="stylesheet" href=finalCSS.css media="all">
+    <link rel="stylesheet" href=finalmobile.css media="(max-width: 660px)">
+    <link rel="stylesheet" href=finalmobile.css media="print">
+  </head>
   <body>
     <header>
       <div id="nav">
         <ul>
-        <li><a href="About.html">Home</a></li>
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="pastevents.html">Past Events</a></li>
-        <li><a href="getinvolved.html">Get Involved</a></li>
-        <li><a href="inspiration.html">Inspiration Boards</a></li>
-        <li><a href="contact.html">Contact</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="mission.html">Mission</a></li>
+          <li><a href="pastevents.html">Past Events</a></li>
+          <li><a href="getinvolved.html">Get Involved</a></li>
+          <li><a href="inspiration.html">Inspiration Boards</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
         </ul>
       </div>
     </header>
@@ -48,30 +40,34 @@
         <h1>Contact</h1>
         <h2>Help me name this organization</h2>
         <p>
-        Stay connected!
+        There is no offical name for this organization!  Please help name this cause by sending your suggestion in the comment box.  Thank you!
+        <br><br>
+      <div class="ogtree">
+        <img src="yellowtree.png">
+      </div>
+        Let's stay connected!
         </p>
     <form id="guestInfo">
-    <div class="form-group">
-      <label>First Name</label>
-      <input type="text" id="fname" value="" placeholder="First Name" contenteditable>
-    </div>
-    <div class="form-group">
-      <label>Last Name</label>
-      <input type="text" id="lname" value="" placeholder="Last Name" contenteditable>
-    </div>
-    <div class="form-group">
-      <label>Email</label>
-      <input type="Email" id="email" value="" placeholder="Email Address" contenteditable>
-    </div>
-    <div class="form-group">
-      <label>Comments</label>
-      <input type="Comments" id="comments" value="" placeholder="Write something...!" contenteditable>
-    </div>
-    <div class="form-group">
-      <input type="submit" id="submit" value="Submit">
-    </div>
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" id="fname" value="" placeholder="First Name" contenteditable>
+      </div>
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" id="lname" value="" placeholder="Last Name" contenteditable>
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="Email" id="email" value="" placeholder="Email Address" contenteditable>
+      </div>
+      <div class="form-group">
+        <label>Comments</label>
+        <input type="Comments" id="comments" value="" placeholder="Write something...!" contenteditable>
+      </div>
+      <div class="form-group">
+        <input type="submit" id="submit" value="Submit">
+      </div>
   </form>
-
     <p>
       <strong>Comments:</strong>
       <span id="filledOutComments">
@@ -113,4 +109,6 @@ function createGuestComments(event) {
 }
 
 form.addEventListener("submit", createGuestComments);
+
+
 </script>

@@ -61,6 +61,7 @@ header {
 }
 
 main {
+  color: #818181;
   background-color: rgba(255, 255, 255, 0.7);
 
   padding: 10px 10px 10px 10px;
@@ -71,8 +72,10 @@ main {
   border-color: gold;
   opacity: 1;
 
-  max-width: absolute;
-  min-width: 600px;
+  max-width: relative;
+  min-width: 300px;
+  height: relative;
+  min-height: 425px;
   margin: 0px 20px 0px 200px;
 }
 
@@ -80,19 +83,11 @@ h1{
   margin: 0px auto;
   font: 70px georgia;
   color: #818181;
-}
-/*h1 {
-  font-size: 400%;
-  font: Helvetica;
+  font-weight: 100%;
   text-align: center;
-}*/
+}
 
-/*use this image in 'contacts' section
-#yellowtree img {
-  border-radius: 100%;
-  width: 300px;
-  height: 300px;
-}*/
+
 
 p {
   color: #818181;
@@ -110,5 +105,23 @@ footer {
   width: 100%;
 
   background-color: rgba(255, 255, 255, 0.5);
+}
 
+label {
+  width: 75px; /*of the words 'firstname/lastname/email/comments'*/
+  float: left;
+  text-align: right; /*towards the input space area*/
+  margin-right: 3px; /*space between text and input space area*/
+  display: block;
+}
+
+.ogtree img {
+  border-radius: 100%;
+  box-shadow: 0px 0px 10px gold;
+  border-style: solid;
+  border-color: gold;
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 0px 20px 20px 3px;
 }
