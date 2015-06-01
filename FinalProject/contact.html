@@ -10,14 +10,6 @@
   border: solid;
 }*/
 
-  body  {
-    background: url(yellowtree.png) no-repeat center center fixed;
-    background-size: cover;
-    background-size: cover;
-    background-size: cover;
-    background-size: cover;
-  }
-
   #container {
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
@@ -113,14 +105,12 @@ function createGuestComments(event) {
   //info and comments made by guest and put it in the span named commentText.
 //how ot append child to comment box??
   event.preventDefault();
-  // formSubmitEvent.preventDefault();
   var resultSpan = document.createElement("li");
-  var result = document.createTextNode(fName + " " + lName + " " + "- " + comments);
+  var result = document.createTextNode(comments + " - " + fName + " " + lName);
   filledOutComments.appendChild(resultSpan);
   resultSpan.appendChild(result);
   guestInfo.reset();
 }
 
 form.addEventListener("submit", createGuestComments);
-// input.focus();
 </script>
