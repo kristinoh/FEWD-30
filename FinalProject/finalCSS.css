@@ -45,6 +45,9 @@ header {
   position: fixed;
 }
 
+#nav {
+  margin-right: 20px;
+}
 #nav li {
   text-align: right;
   display: block;
@@ -72,8 +75,8 @@ main {
   border-color: gold;
   opacity: 1;
 
-  width: 800px;
-  min-width: 300px;
+  max-width: auto;
+  min-width: 600px;
   height: relative;
   min-height: 425px;
   margin: 0px 20px 0px 200px;
