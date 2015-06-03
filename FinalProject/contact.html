@@ -99,7 +99,6 @@ function createGuestComments(event) {
   var lName = document.getElementById("lname").value;
   var comments = document.getElementById("comments").value; //coments on form
   //info and comments made by guest and put it in the span named commentText.
-//how ot append child to comment box??
   event.preventDefault();
   var resultSpan = document.createElement("li");
   var result = document.createTextNode(comments + " - " + fName + " " + lName);
